@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-start: #7c3aed; /* purple */
+  --brand-mid: #fb7185;   /* rose */
+  --brand-end: #f59e0b;   /* amber */
+  --accent: #14b8a6;      /* teal */
+}
+
+body {
+  @apply bg-gradient-to-br from-[var(--brand-start)] via-[var(--brand-mid)] to-[var(--brand-end)];
+  background-attachment: fixed;
+}

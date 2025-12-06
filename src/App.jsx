@@ -5,7 +5,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const API_BASE = "https://tutor-backend-production.up.railway.app";
+    const API_BASE = import.meta.env.VITE_API_BASE;
 
     fetch(`${API_BASE}/api/tutors`)
       .then(res => {
